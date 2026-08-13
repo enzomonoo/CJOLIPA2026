@@ -8,5 +8,4 @@ Livro C++ Underground Programmer de José Augusto N. G. Manzano
 <br>
 disponiveis no
 <a href=https://novo.manzano.pro.br/wp/> Website do professor </a>
-<p>Os códigos foram escritos e compilados utilizando o Geany em um sistema Linux.</p>
-
+<p>Os códigos foram escritos e compilados em Clang utilizando a IDE Geany em um sistema Linux.</p>
