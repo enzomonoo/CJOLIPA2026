@@ -22,7 +22,7 @@ int main(void){
 	
 	volume = PI * altura * pow(r, 2);
 	
-	print("Volume total da lata de óleo... : {}", volume);
+	print("Volume total da lata de oleo... : {}", volume);
 	
 	println("");
     print("Aperte [Enter] para encerrar... ");

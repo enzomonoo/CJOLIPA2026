@@ -12,7 +12,7 @@ int main(void){
 	cin >> tempo;
 	cin.ignore(80, '\n');
 	
-	print("Digite a velocidade média... : ");
+	print("Digite a velocidade media... : ");
 	cin >> velocidade;
 	cin.ignore(80, '\n');
 	println("");
@@ -20,7 +20,7 @@ int main(void){
 	distancia = tempo * velocidade;
 	litrosUsados = distancia / 12;
 	
-	println("Velocidade Mèdia................. : {: >8.2f}", velocidade);
+	println("Velocidade Media................. : {: >8.2f}", velocidade);
 	println("Tempo Gasto na Viagem............ : {: >8.2f}", tempo);
 	println("Distância Percorrida............. : {: >8.2f}", distancia);
 	println("Quantidade de Litros Utilizada... : {: >8.2f}", litrosUsados);
