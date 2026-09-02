@@ -7,7 +7,7 @@ using namespace std;
 
 int main(void){
 	uint16_t valorSequencia;
-	uint32_t proximo, i, a, b;
+	uint64_t proximo, i, a, b;
 	
 	do{
 		println();		
@@ -20,6 +20,7 @@ int main(void){
 		i = 1;
 		a = 0;
 		b = 1;
+		
 		if (valorSequencia > 0){
 			for (i = 1; i <= valorSequencia; i++){
 				if (i == valorSequencia){
