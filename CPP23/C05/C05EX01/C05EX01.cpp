@@ -20,6 +20,7 @@ int main(void){
 	uint16_t opcao = 0;// opcao se inicia com o valor de 0
 	
 	while (opcao == 0){
+		system("clear");
 		println("-----------------------");
 		println("Programa de Calculadora");
 		println("     Menu Principal    ");

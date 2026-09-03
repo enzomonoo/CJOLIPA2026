@@ -12,7 +12,7 @@ void pausa(void){
 }
 
 void fatorial(uint16_t n){
-	uint64_t fat {1};
+	uint64_t fat {1}; // Inicializa a variavel com o valor de 1
 	for (uint16_t i = 1; i <= n; i++) fat *= i;
 	println("Fatorial de {} = a: {}", n, fat);
 }
@@ -20,6 +20,7 @@ void fatorial(uint16_t n){
 int main(void){
 	uint16_t x;
 	
+	system("clear");
 	println("Calculo de fatorial");
 	print("Entre um valor inteiro... : ");
 	cin >> x;

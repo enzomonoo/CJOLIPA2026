@@ -1,14 +1,13 @@
-//C05EX08
+//C05EX09
 
 #include <iostream>
 #include <print>
 #include <iomanip>
-#include <cmath>
+#include <windows.h>
 
 using namespace std;
 
 int main(void){
-	system("clear");
 	println("{:>14.10f}", pow(2.0, 3.0));
 	println("{:>14.10f}", pow(2.0, 0.0));
 	println();

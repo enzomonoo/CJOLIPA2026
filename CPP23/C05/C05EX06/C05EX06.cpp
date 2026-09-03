@@ -27,6 +27,7 @@ int main(void){
 	uint16_t v1, v2;
 	string m;
 	
+	system("clear");
 	print("Entre o primeiro valor... : ");
 	cin >> v1;
 	cin.ignore(80,'\n');

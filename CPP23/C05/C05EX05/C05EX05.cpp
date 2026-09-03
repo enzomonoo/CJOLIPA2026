@@ -22,6 +22,7 @@ uint64_t fatorial(int n){
 int main(void){
 	uint16_t x;
 	
+	system("clear");
 	println("Calculo de fatorial");
 	print("Entre um valor inteiro... : ");
 	cin >> x;

@@ -1,4 +1,4 @@
-#define _USE_MATH_DEFINES
+//C05EX07
 
 #include <cmath>
 #include <iostream>
@@ -8,6 +8,7 @@ using namespace std;
 
 int main()
 {
+	system("clear");
     println("{:>14.10f}",acos(-1));
     println("{:>14.10f}",acos(0.5) * 180.0 / M_PI);
     println();

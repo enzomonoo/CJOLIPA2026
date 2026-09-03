@@ -11,7 +11,7 @@ void pausa(void){
 	cin.get();
 }
 
-void fatorial(uint16_t n, uint64_t &fat){
+void fatorial(uint16_t n, uint64_t &fat){ // o & significa REFERENCIA
 	uint64_t i;
 	fat = 1;
 	for (i = 1; i <= n; i++) fat *= i;
@@ -21,6 +21,7 @@ int main(void){
 	uint16_t x;
 	uint64_t y;
 	
+	system("clear");
 	println("Calculo de fatorial");
 	print("Entre um valor inteiro... : ");
 	cin >> x;
