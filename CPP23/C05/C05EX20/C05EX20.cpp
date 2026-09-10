@@ -25,6 +25,7 @@ int main(void){
 	int16_t VALOR = 4;
 	
 	println("{}", VALOR);
+	println("{}", ::VALOR);
 	println("{}", escopo1::VALOR);
 	println("{}", escopo1::escopo2::VALOR);
 	
