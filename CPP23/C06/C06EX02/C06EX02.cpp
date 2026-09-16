@@ -15,7 +15,6 @@ int main(void){
 	int16_t *pidade = nullptr;
 	pidade = &idade;
 	
-	
 	printf("Idade.... : \%i Endereco... : \%p", idade, &idade);
 	printf("\nPIdade... : \%i Endereco... : \%p", *pidade, &pidade);
 	// "\%p" para imprimir valores de endereço de ponterios no printf

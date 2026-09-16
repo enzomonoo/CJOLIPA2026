@@ -12,8 +12,7 @@ void pausa(void){
 
 int main(void){
 	int16_t idade = 23;
-	int16_t *pidade = nullptr;
-	pidade = &idade;
+	int16_t *pidade = &idade;
 	
 	printf("A idade %i esta armazenada", *pidade);
 	printf("\nno endereco de memoria \%p", pidade);
