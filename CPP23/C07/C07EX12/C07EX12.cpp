@@ -1,8 +1,9 @@
-//C07EX11
+//C07EX12
 
 #include <iostream>
 #include <iomanip>
 #include <print>
+#include <vector>
 
 using namespace std;
 
@@ -14,7 +15,6 @@ void pausa(void){
 int main(void){
 	size_t i, j;
 	uint32_t linhas, colunas;
-	uint32_t **p_matriz;
 	
 	print("Entre a quantidade de linhas.... : ");
 	cin >> linhas;
@@ -24,15 +24,15 @@ int main(void){
 	cin >> colunas;
 	cin.ignore(80, '\n');
 	 
-	p_matriz = new uint32_t * [linhas];
+	vector<vector<uint32_t>>
+		matriz(linhas, vector<uint32_t>(colunas));
 	
-	for (i = 0; i <= linhas - 1; i++) p_matriz[i] = new uint32_t[colunas];
 	println();
 	
-	for (i = 0; i <= linhas - 1; i++){
-		for (j = 0; j <= colunas - 1; j++){
+	for (i = 0; i < linhas; i++){
+		for (j = 0; j < colunas; j++){
 			printf("Escreva o valor para matriz[%lu,%lu]... : ", i, j);
-			cin >> p_matriz[i][j];
+			cin >> matriz[i][j];
 			cin.ignore(80, '\n');
 		}
 		println();
@@ -41,17 +41,15 @@ int main(void){
 	println();
 	print("Os valores informados foram... : \n");
 	
-	for (i = 0; i <= linhas - 1; i++){
-		for (j = 0; j <= colunas - 1; j++){
-			printf(" Matriz [%lu,%lu] = %i", (i + 1), (j + 1), p_matriz[i][j]);
+	for (i = 0; i < linhas; i++){
+		for (j = 0; j < colunas; j++){
+			printf(" Matriz [%lu,%lu] = %i", (i + 1), (j + 1), matriz[i][j]);
 			println();
 		}
 		println();
 	}
-	
-	for (i = 0; i <= linhas - 1; i++) delete [] p_matriz[i];
-	delete [] p_matriz;
-		
+			
 	pausa();
 	return 0;
 }
+
